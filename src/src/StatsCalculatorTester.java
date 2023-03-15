@@ -38,14 +38,39 @@ public class StatsCalculatorTester {
         statCal5.print();
         statCal5.printSorted();
         statCal5.printFiveNumberSummary();
+        System.out.println(statCal5.calculateMean());
 
         System.out.println();
 
-        double[] list6 = {10.5, 11.5, 17.25, 126.25, 5.26, 30.26, 0.1, 72.52};
+        double[] list6 = {15.555, 26.295, 58.343, 77.507, 98.342, 4.694, 38.320, 15.653, 74.374, 93.381, 33.596, 40.496,
+                39.576, 5.034, 27.797};
         StatsCalculator statCal6 = new StatsCalculator(list6);
         statCal6.print();
         statCal6.printSorted();
         statCal6.printFiveNumberSummary();
+
+        System.out.println();
+
+        double[] list7 = {31.715, 42.361, 79.493, 10.176, 19.038, 64.356, 24.688, 19.369, 60.172, 23.066, 18.576,
+                50.688};
+        StatsCalculator statCal7 = new StatsCalculator(list7);
+        statCal7.print();
+        statCal7.printSorted();
+        statCal7.printFiveNumberSummary();
+        System.out.println(statCal7.calculateMean());
+
+        System.out.println();
+
+        double[ ] data = {1,2,3,4,5,6};
+
+        //create a StatsCalculator object
+        StatsCalculator myCalculator = new StatsCalculator(data);
+
+        myCalculator.print();
+        myCalculator.sortData();
+        myCalculator.printSorted();
+        myCalculator.printFiveNumberSummary();
+        System.out.println(myCalculator.calculateMean());
 
         System.out.println();
 
