@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class StatsCalculator {
 
-    private final double[] values;  // array of values to be analyzed
+    private final double[] values;  // array of values to be set by constructors
     private double[] sortedValues;  // array of sorted values
 
     /**
